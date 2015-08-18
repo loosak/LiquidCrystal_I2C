@@ -1,6 +1,8 @@
 #include <Wire.h> 
-#include "LiquidCrystal_I2C.h"
+#include "LiquidCrystal_I2C.h" //https://bitbucket.org/fmalpartida/new-liquidcrystal/downloads
 
+// I2C board type V3 http://arduino-info.wikispaces.com/LCD-Blue-I2C#v3
+// A0 A1 A2 connections are NOT bridged with solder
 LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  
 
 void setup() {
